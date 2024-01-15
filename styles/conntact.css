@@ -18,11 +18,11 @@ body {
 }
 
 /* =====splash preLoading screen======= */
-#splash-screen{
+#splash-screen {
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: #000 url('../images/Gear-0.2s-200px.gif') no-repeat center center;
+  background: #000 url("../images/Gear-0.2s-200px.gif") no-repeat center center;
   background-size: 10%;
   z-index: 100;
 }
@@ -68,10 +68,8 @@ header .wrapper {
   justify-content: space-between;
   align-items: center;
 }
-.wrapper .logo h3 {
-  font-size: 2.5vw;
-  font-weight: 700;
-  color: var(--primaryColor);
+.wrapper .logo img {
+  width: 100px;
 }
 .wrapper ul {
   list-style: none;
@@ -119,8 +117,8 @@ header .wrapper {
   header {
     position: relative;
   }
-  .wrapper .logo h3 {
-    font-size: 5vw;
+  .wrapper .logo img {
+    width: 50px;
   }
   .menu {
     position: absolute;
@@ -154,8 +152,8 @@ header .wrapper {
   header {
     position: relative;
   }
-  .wrapper .logo h3 {
-    font-size: 3vw;
+  .wrapper .logo img {
+    width: 50px;
   }
   .menu {
     position: absolute;
@@ -185,14 +183,13 @@ header .wrapper {
   }
 }
 
-
 /* ===Contact section starts== */
-.contact-us{
+.contact-us {
   width: 100%;
   /* background-color: burlywood; */
   margin: 0px 0 20px;
 }
-.contact-us .wrapper{
+.contact-us .wrapper {
   width: 85%;
   height: 100%;
   margin: 0 auto;
@@ -217,7 +214,7 @@ header .wrapper {
   width: 90px;
 }
 
-.wrapper .container-div{
+.wrapper .container-div {
   width: 100%;
   /* background-color: aquamarine; */
   display: flex;
@@ -228,58 +225,57 @@ header .wrapper {
 }
 
 /* ==contact left side data and icon=== */
-.container-div .contact-info{
+.container-div .contact-info {
   width: 40%;
   height: 80vh;
-  background-image: url('../images/contactBg.png');
+  background-image: url("../images/contactBg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom ;
+  background-position: bottom;
   border-radius: 0px 50px 50px 0;
   overflow: hidden;
 }
 
-.contact-info-bgLayer{
+.contact-info-bgLayer {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(0,0,0,.2) ,rgba(0,0,0,0.1));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
   display: flex;
   flex-direction: column;
   gap: 15px;
   padding: 70px 15px 10px 20px;
 }
 
-.contact-info h4{
+.contact-info h4 {
   font-size: 22px;
   font-weight: 700;
   color: var(--primaryColor);
   margin-bottom: 2px;
 }
-.contact-info p{
+.contact-info p {
   font-size: 16px;
   font-weight: 500;
   color: var(--secondaryColor);
   margin-bottom: 5px;
 }
-.info-container{
+.info-container {
   display: flex;
   /* align-items: center; */
 }
-.info-container .icon-div{
+.info-container .icon-div {
   padding: 10px 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: start;
   gap: 5px;
-
 }
-.icon-div span{
+.icon-div span {
   display: inline-block;
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  box-shadow: .5px .5px .5px white;
+  box-shadow: 0.5px 0.5px 0.5px white;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -288,7 +284,7 @@ header .wrapper {
   font-weight: 400;
   color: var(--primaryColor);
 }
-.info-container .info-forIcon{
+.info-container .info-forIcon {
   padding: 8px 5px 8px 0;
   /* margin-left: -5px; */
   display: flex;
@@ -298,7 +294,7 @@ header .wrapper {
   gap: 5px;
   /* background-color: red; */
 }
-.info-forIcon p{
+.info-forIcon p {
   font-size: 12px;
   font-weight: 600;
   padding-left: 4px;
@@ -363,7 +359,7 @@ header .wrapper {
 .form-btn-div {
   width: 80%;
 }
-#form button { 
+#form button {
   border-radius: 6px;
   padding: 8px 30px;
   font-size: 16px;
@@ -388,7 +384,7 @@ header .wrapper {
 .form-group #robot {
   width: 30px;
 }
-.form-group span{
+.form-group span {
   font-size: 14px;
 }
 
@@ -424,8 +420,8 @@ header .wrapper {
 }
 
 /* ====media Query for contact section====== */
-@media screen and (min-width: 577px) and (max-width: 777px) { 
-  .wrapper .container-div{
+@media screen and (min-width: 577px) and (max-width: 777px) {
+  .wrapper .container-div {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -433,20 +429,20 @@ header .wrapper {
     justify-content: center;
     padding-bottom: 20px;
   }
-  
+
   /* ==contact left side data and icon=== */
-  .container-div .contact-info{
+  .container-div .contact-info {
     width: 100%;
     height: auto;
-    background-image: url('../images/mediumContactBg.png');
-    background-position: bottom center ;
+    background-image: url("../images/mediumContactBg.png");
+    background-position: bottom center;
     border-radius: 50px 0;
   }
-  
-  .contact-info-bgLayer{
+
+  .contact-info-bgLayer {
     padding: 70px 15px 8px 20px;
   }
-  
+
   /* ====actual contact form ==== */
   .container-div .contact-form-div {
     width: 100%;
@@ -462,7 +458,7 @@ header .wrapper {
     right: 10px;
     color: red;
   }
-  
+
   .form-group #textarea-span {
     position: absolute;
     bottom: 30px;
@@ -472,49 +468,48 @@ header .wrapper {
 }
 
 @media screen and (max-width: 576px) {
- 
   .contact-title .heading {
     padding: 15px 0 5px;
     font-size: 4.2vw;
   }
-  
-  .wrapper .container-div{
+
+  .wrapper .container-div {
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     padding-bottom: 20px;
   }
-  
+
   /* ==contact left side data and icon=== */
-  .container-div .contact-info{
+  .container-div .contact-info {
     width: 100%;
     height: auto;
-    background-image: url('../images/mediumContactBg.png');
-    background-position: bottom center ;
+    background-image: url("../images/mediumContactBg.png");
+    background-position: bottom center;
     border-radius: 50px 0;
   }
-  
-  .contact-info-bgLayer{
+
+  .contact-info-bgLayer {
     padding: 70px 15px 8px 20px;
   }
-  
-  .contact-info h4{
+
+  .contact-info h4 {
     font-size: 18px;
   }
-  .contact-info p{
+  .contact-info p {
     font-size: 14px;
     font-weight: 600;
   }
-  .icon-div span{
+  .icon-div span {
     width: 20px;
     height: 20px;
     font-size: 12px;
   }
-  .info-forIcon p{
+  .info-forIcon p {
     font-size: 10px;
   }
-  
+
   /* ====actual contact form ==== */
   .container-div .contact-form-div {
     width: 100%;
@@ -537,7 +532,7 @@ header .wrapper {
   .form-btn-div {
     width: 80%;
   }
-  #form button { 
+  #form button {
     border-radius: 4px;
     padding: 4px 18px;
     font-size: 14px;
@@ -547,21 +542,19 @@ header .wrapper {
     padding: 4px 18px;
     font-size: 14px;
   }
-  .form-group span{
+  .form-group span {
     font-size: 12px;
   }
   .form-group #textarea-span {
     font-size: 14px;
   }
-  
+
   .form-group span i {
     color: aqua;
     font-size: 16px;
     margin-right: 20px;
   }
 }
-
-
 
 /* ====footer====== */
 .footer {
